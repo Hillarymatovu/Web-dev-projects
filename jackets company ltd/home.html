@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/jacketi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JACKETS COMPANY LTD</title>
+</head>
+<body style="max-height: 120vh;">
+    <header>
+        <h1>JACKETS COMPANY LTD</h1>
+   <p class="press">menu</p>
+        <div class="menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+        </div>
+    </header>
+   <nav class="nav active">
+       <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signup.html" style="text-decoration: none; padding:10px;background-color:white;color:black">register</a></li>
+       </ul>
+   </nav>
+   <div class="headervideo">
+      <video src="videos/headervideo.mp4" autoplay muted loop></video>
+   </div>  
+   <div class="videotext">
+    <h1>WE SELL JACKETS</h1>
+   </div>
+
+   <section class="content1">
+     <div class="title">
+        <h1>popular jackets</h1>
+     </div>
+     <div class="products">
+        <div class="box">
+            <div class="image">
+<img src="images/jacket2.webp">
+            </div>
+            <div class="info">
+                <p>puma unisex jacket.....</p>
+                <p>UGX 110,000</p>
+                <a href="#"><button>Purchase</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+             <img src="images/jacket1.webp" alt="nylon jacket">
+            </div>
+            <div class="info">
+                 <p>nylon army green jacket.....</p>
+                 <p>UGX 80,000</p>
+                 <a href="#"><button>Purchase</button></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+          <img src="images/jacket3.png" alt="">
+            </div>
+            <div class="info">
+                <p>authentic RAF bomber jacket.....</p>
+                <p>UGX 50,000</p>
+                <a href="#"><button>Purchase</button></a>
+            </div>
+        </div>
+     </div>
+   </section>
+
+
+   <section class="content2">
+    <div class="title">
+       <h1>latest jackets</h1>
+    </div>
+    <div class="products">
+       <div class="box">
+           <div class="image">
+<img src="images/jacket4.png">
+           </div>
+           <div class="info">
+               <p>black leather bomber jacket.....</p>
+               <p>UGX 30,000</p>
+               <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+       <div class="box">
+           <div class="image">
+            <img src="images/jacket5.jpg" alt="nylon jacket">
+           </div>
+           <div class="info">
+                <p>brown ALL SAINTS bomber jacket.....</p>
+                <p>UGX 75,000</p>
+                <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+       <div class="box">
+           <div class="image">
+         <img src="images/jacket6.jpg" alt="">
+           </div>
+           <div class="info">
+               <p>reflector men's jacket .....</p>
+               <p>UGX 150,000</p>
+               <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+    </div>
+  </section>
+ 
+  <section class="content3">
+    <div class="title">
+       <h1>weather and rain jackets</h1>
+    </div>
+    <div class="products">
+       <div class="box">
+           <div class="image">
+<img src="images/jacket7.jfif">
+           </div>
+           <div class="info">
+               <p>plaid rain jacket.....</p>
+               <p>UGX 47,500</p>
+               <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+       <div class="box">
+           <div class="image">
+            <img src="images/jacket8.webp" alt="nylon jacket">
+           </div>
+           <div class="info">
+                <p>multi colors foldable rain jacket.....</p>
+                <p>UGX 87,700</p>
+                <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+       <div class="box">
+           <div class="image">
+         <img src="images/jacket9.jpg" alt="">
+           </div>
+           <div class="info">
+               <p>custom rain jacket.....</p>
+               <p>UGX 15,700</p>
+               <a href="#"><button>Purchase</button></a>
+           </div>
+       </div>
+    </div>
+  </section>
+
+
+ <footer>
+    <img src="images/headerimg.jpg">
+    <div class="overlay"></div>
+ </footer>
+  
+
+  <script>
+    var menu = document.querySelector(".menu");
+    var nav = document.querySelector(".nav");
+
+    menu.onclick = function hide(){
+        nav.classList.toggle("active");
+    }
+  </script>
+  <script>
+    var press = document.querySelector(".press");
+    var menu = document.querySelector(".menu");
+
+    menu.addEventListener('mouseover', function show(){
+      press.style.visibility = "visible";
+    });
+    menu.addEventListener('mouseleave', function hide(){
+        press.style.visibility = "hidden";
+    });
+    
+  </script>
+</body>
+</html>

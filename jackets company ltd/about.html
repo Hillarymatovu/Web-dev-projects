@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/jacketi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JACKETS COMPANY LTD</title>
+</head>
+<body>
+    <header>
+        <h1>JACKETS COMPANY LTD</h1>
+   <p class="press">menu</p>
+        <div class="menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+        </div>
+    </header>
+   <nav class="nav active">
+       <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+   </nav>  
+
+   <div class="heading1">
+       <div class="tt">
+              <h2>/</h2><span>&nbsp;&nbsp; About</span>
+       </div>
+   </div>
+
+   <section class="manager">
+       <div class="image">
+      
+       </div>
+       <div class="info">
+              <h1>About the manager</h1>
+         <p>matovu hillary is a manager of JACKETS COMPANY LTD and founder <br> the 
+       company was started by the manager in august on the date of 23rd in the year 2016 <br> 
+     he is an undergraduate from uganda martyrs university who graduated with a first class degree in the year of 1999</p>
+       </div>
+   </section>
+  <script>
+    var menu = document.querySelector(".menu");
+    var nav = document.querySelector(".nav");
+
+    menu.onclick = function hide(){
+        nav.classList.toggle("active");
+    }
+  </script>
+  <script>
+    var press = document.querySelector(".press");
+    var menu = document.querySelector(".menu");
+
+    menu.addEventListener('mouseover', function show(){
+      press.style.visibility = "visible";
+    });
+    menu.addEventListener('mouseleave', function hide(){
+        press.style.visibility = "hidden";
+    });
+    
+  </script>
+</body>
+</html>

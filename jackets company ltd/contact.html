@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/jacketi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JACKETS COMPANY LTD</title>
+    <style>
+      body{
+        background-color: rgb(13, 30, 13);
+      }
+       .contact{
+        width: 100%;
+        height: 500px;
+        color: white;
+        padding-top: 120px;
+       }
+       .contact p{
+        text-align: center;
+        padding: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JACKETS COMPANY LTD</h1>
+   <p class="press">menu</p>
+        <div class="menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+        </div>
+    </header>
+   <nav class="nav active">
+       <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+       </ul>
+   </nav> 
+   
+   <section class="contact">
+    <h1 style="text-decoration: underline; text-align: center;">CONTACT US</h1>
+    <p>+256 755 889 000</p>
+    <p>+256 755 886 000</p>
+    <p>+256 755 883 000</p>
+    <p>+256 755 888 000</p>
+    <p>+256 755 881 000</p>
+    <p>+256 755 880 000</p>
+  </section>
+  <script>
+    var menu = document.querySelector(".menu");
+    var nav = document.querySelector(".nav");
+
+    menu.onclick = function hide(){
+        nav.classList.toggle("active");
+    }
+  </script>
+  <script>
+    var press = document.querySelector(".press");
+    var menu = document.querySelector(".menu");
+
+    menu.addEventListener('mouseover', function show(){
+      press.style.visibility = "visible";
+    });
+    menu.addEventListener('mouseleave', function hide(){
+        press.style.visibility = "hidden";
+    });
+    
+  </script>
+</body>
+</html>

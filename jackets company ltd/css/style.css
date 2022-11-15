@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+}
+header h1{
+    font-size: 20px;
+    margin-left: 5%;
+    font-family: "Shadows+Into+Light" ;
+}
+header .logins{
+    margin-right: 50px;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(109, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+header .logins p{
+    font-size: 15px;
+}
+header a{
+    text-decoration: none;
+}
+.texts{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+}
+.texts h1{
+    margin-top: 140px;
+    font-size: 70px;
+    font-weight: 800;
+    color:rgb(109, 20, 20) ;
+    text-transform: uppercase;
+}
+.texts p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color:black ;
+    text-transform: capitalize;
+}
+
+.menu{
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.menu .bar{
+    width: 35%;
+    height: 3px;
+    margin-top: 2px;
+    margin-left: 20px;
+    background-color: black;
+}
+.menu .bar:first-child{
+    margin-top: 30%;
+}
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(109, 20, 20);
+    top:70px;
+    transition: .5s ease-in-out;
+}
+.nav.active{
+    top:30px;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;
+    margin-inline-end: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: rgb(150, 150, 14);
+}
+.press{
+    position: absolute;
+    right: 120px;
+    font-weight: 800;
+    color: aqua;
+    visibility: hidden;
+}
+.nav ul li a.active{
+    color: rgb(150, 150, 14);
+}
+.headervideo{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 110px;
+}
+.headervideo video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.videotext{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 170px;
+}
+.videotext h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+.content1{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 310px;
+}
+.content1 .title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+.content1 .title h1{
+    text-transform: capitalize;
+}
+.content1 .products{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+}
+.content1 .products .box{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px grey;
+    display: block;
+    margin-left: 40px;
+    transition: .3s ease-in-out;
+}
+.content1 .products .box:hover{
+   width: 30.1%;
+   height: 99.9%;
+}
+
+.content1 .products .box .image{
+    width: 100%;
+    height: 60%;
+    box-shadow: 0px 4px 4px 0px grey;
+}
+.content1 .products .box .image img{
+    width: 100%;
+    height: 100%;
+}
+.content1 .products .box .info{
+    width: 100%;
+    height: 40%;
+}
+.content1 .products .box .info p:first-child{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+}
+.content1 .products .box .info p:nth-child(2){
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: orangered;
+    text-align: center;
+    margin: 10px;
+}
+.content1 .products .box .info button{
+    margin-top: 10px;
+    margin-left: 33%;
+    border: none;
+    background-color:  rgb(4, 4, 19);
+    padding: 4px 40px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/* for content two */
+
+.content2{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 820px;
+}
+.content2 .title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+.content2 .title h1{
+    text-transform: capitalize;
+}
+.content2 .products{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+}
+.content2 .products .box{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px grey;
+    display: block;
+    margin-left: 40px;
+    transition: .3s ease-in-out;
+}
+.content2 .products .box:hover{
+   width: 30.1%;
+   height: 99.9%;
+}
+
+.content2 .products .box .image{
+    width: 100%;
+    height: 60%;
+    box-shadow: 0px 4px 4px 0px grey;
+}
+.content2 .products .box .image img{
+    width: 100%;
+    height: 100%;
+}
+.content2 .products .box .info{
+    width: 100%;
+    height: 40%;
+}
+.content2 .products .box .info p:first-child{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+}
+.content2 .products .box .info p:nth-child(2){
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: orangered;
+    text-align: center;
+    margin: 10px;
+}
+.content2 .products .box .info button{
+    margin-top: 10px;
+    margin-left: 33%;
+    border: none;
+    background-color:  rgb(4, 4, 19);
+    padding: 4px 40px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/* for content two */
+
+.content3{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 1320px;
+}
+.content3 .title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+.content3 .title h1{
+    text-transform: capitalize;
+}
+.content3 .products{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+}
+.content3 .products .box{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px grey;
+    display: block;
+    margin-left: 40px;
+    transition: .3s ease-in-out;
+}
+.content3 .products .box:hover{
+   width: 30.1%;
+   height: 99.9%;
+}
+
+.content3 .products .box .image{
+    width: 100%;
+    height: 60%;
+    box-shadow: 0px 4px 4px 0px grey;
+}
+.content3 .products .box .image img{
+    width: 100%;
+    height: 100%;
+}
+.content3 .products .box .info{
+    width: 100%;
+    height: 40%;
+}
+.content3 .products .box .info p:first-child{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+}
+.content3 .products .box .info p:nth-child(2){
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: orangered;
+    text-align: center;
+    margin: 10px;
+}
+.content3 .products .box .info button{
+    margin-top: 10px;
+    margin-left: 33%;
+    border: none;
+    background-color:  rgb(4, 4, 19);
+    padding: 4px 40px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 1880px;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+}
+footer .overlay{
+    background-color: black;
+    width: 100%;
+    height:300px ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: overlay;
+}
+
+/* for about */
+
+.heading1{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 110px;
+    justify-content: center;
+}
+.heading1 .tt{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(109, 20, 20);
+}
+.manager{
+    width: 100%;
+    position: absolute;
+    top: 310px;
+    display: flex;
+    height: 500px;
+}
+.manager .image{
+    width: 40%;
+    height: 100%;
+}
+.manager .image img{
+    width: 100%;
+    height: 100%;
+}
+.manager .info{
+    width: 60%;
+    height: 100%;padding: 30px;
+}
+.manager .info h1{
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.manager .info p{
+    font-size: 30px;
+   text-transform: capitalize;
+   text-align: center;
+}
